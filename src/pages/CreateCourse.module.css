@@ -18,12 +18,15 @@
 }
 .jobPostContainer {
   display: flex;
-  background-color: #161717;
-  border: 1px solid #fff;
+  background-color: #181b23;
+  /* border: 1px solid #fff; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  padding: 20px;
+  /* margin-left: -80px; */
+  margin-top: -15px;
+  width: 90%;
   box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
   border-radius: 12px;
 }
@@ -35,23 +38,28 @@
   /* border-bottom: 1px solid #d9dbe9; */
   padding: 18px;
   gap: 18px;
-  border-bottom: 1px solid #d9dbe9;
+  border-bottom: 2px solid #d9dbe9;
 }
 .step {
   background-color: #eff0f6;
-  color: #6f6c90;
+  color: #000;
   width: 34px;
   height: 34px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  font-weight: 600;
+  font-size: 16px;
 }
 .activeStep {
   background-color: #fad85d;
-  color: #fff;
+  color: #000;
+  font-weight: 600;
   width: 34px;
   height: 34px;
+  font-size: 16px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,9 +144,13 @@ select {
 .btnContainer {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 30px;
+}
+.btnContainer button {
+  color: #000 !important;
+  font-weight: 500 !important;
 }
 .btnOutline {
   background-color: transparent !important;
@@ -147,16 +159,17 @@ select {
   font-weight: 500 !important;
 }
 .textArea {
-  color: #6f6c90;
+  color: rgba(19, 19, 20, 0.4);
+  background-color: #282a2c;
   height: 120px;
   border-radius: 12px;
   border: 1px solid #6f6c902f;
   padding: 14px;
   /* Other/18-20 R */
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px; /* 111.111% */
 }
 .btnContainer > button {
@@ -397,8 +410,4 @@ select {
 
 .addButton:hover {
   background-color: #fad85d;
-}
-
-.chapterCardContainer {
-  background-color: red;
 }

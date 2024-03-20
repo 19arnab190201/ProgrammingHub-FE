@@ -46,7 +46,7 @@ const MainLayout = ({ children }) => {
     <Layout style={{ minHeight: "100vh" }}>
       <Sider
         style={{
-          backgroundColor: "#161717",
+          backgroundColor: "#181B23",
           color: "#fff",
         }}
         collapsible
@@ -57,7 +57,7 @@ const MainLayout = ({ children }) => {
         </div>
         <Menu
           style={{
-            backgroundColor: "#1E1E1E",
+            backgroundColor: "#181B23",
             color: "#fff",
             borderRight: "none",
           }}
@@ -70,7 +70,7 @@ const MainLayout = ({ children }) => {
       <Layout>
         <Content
           style={{
-            backgroundColor: "#1E1E1E",
+            backgroundColor: "#000000",
             padding: "16px",
             overflow: "auto", // Add this line
             height: "calc(100vh - 64px)", // And this line

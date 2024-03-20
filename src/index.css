@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 body {
   background-color: "#161717";
@@ -24,4 +23,16 @@ body {
 .logo img {
   width: 100%;
   height: 100%;
+}
+.ant-menu-item-selected {
+  background-color: #fad85d !important;
+  color: #000 !important;
+}
+.ant-menu-item .ant-menu-item-selected svg {
+  color: #000 !important;
+}
+.ant-layout-sider-trigger {
+  background-color: #fad85d !important;
+  color: #000 !important;
+  border-radius: 10px !important;
 }
