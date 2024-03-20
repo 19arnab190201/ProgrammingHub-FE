@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect, Suspense } from "react";
+import { Routes, Route, Outlet, useNavigate } from "react-router-dom";
+import { useAuthContext } from "./hooks/useAuthContext";
 
-function App() {
-  const [count, setCount] = useState(0)
+import "./App.css";
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+import Login from "./pages/Auth/Login";
+import Dashboard from "./pages/Dashboard";
+import Course from "./pages/Course";
+import CreateCourse from "./pages/CreateCourse";
+
+function App({ navigation }) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const user = JSON.parse(localStorage.getItem("programminghub"));
+    if (user) {
+      navigate("/dashboard");
+    }
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route path='/' element={<MainLayout />}>
+        <Route index element={<Dashboard />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/course' element={<Course />} />
+        <Route path='/course/create' element={<CreateCourse />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

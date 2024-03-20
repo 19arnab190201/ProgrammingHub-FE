@@ -1,0 +1,222 @@
+.modalContentRight {
+  border: 1px solid #e5e5e5;
+  height: 100%;
+  width: 50%;
+  padding: 40px 60px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.modalContentRight h2 {
+  color: #364152;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%; /* 40.64px */
+  margin-bottom: 8px;
+}
+
+.modalContentRight p {
+  color: #384260;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127%; /* 25.4px */
+  margin-bottom: 10px;
+}
+
+.modalContentRight p span {
+  color: #0061fe;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.modalContentRight p span:hover {
+  text-decoration: underline;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.formContainer div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContainer label {
+  color: #384260;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.18px;
+}
+
+.formContainer input {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formContainer input:focus {
+  outline: none;
+  border: 1px solid #fad85d;
+}
+
+.modalContentLeft {
+  display: block;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  background-image: url(../../assets/authbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+}
+
+.modalContentLeft h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 127%; /* 40.64px */
+  margin-bottom: 16px;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 17px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 127%; /* 25.4px */
+}
+
+.submitBtn {
+  background-color: #0061fe;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.googleBtn,
+.linkedinBtn {
+  border-radius: 8px;
+  color: #384260;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #38426000;
+
+  gap: 10px;
+  width: 80%;
+  margin-bottom: 6px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(9, 30, 66, 0.081) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.056) 0px 0px 0px 1px;
+}
+
+.googleBtn:hover,
+.linkedinBtn:hover {
+  border: 2px solid #38426048;
+}
+
+/* OTP Input Styles */
+.otpInputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.otpInputs input {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #cecece;
+  margin: 0 5px;
+  border-radius: 4px;
+}
+/* Add this CSS to your stylesheet */
+.otpInputs input[type="number"]::-webkit-inner-spin-button,
+.otpInputs input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.emailTag {
+  color: #0061fe;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.18px;
+  margin-bottom: 30px;
+  background-color: #f4f7fe;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emailTag span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.otpId {
+  position: absolute;
+  bottom: 20px;
+  width: 75%;
+  font-size: 16px !important;
+  text-align: center;
+}
+
+.resendbtn {
+  height: 0px;
+  padding: 2%;
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+}

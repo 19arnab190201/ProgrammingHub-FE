@@ -1,0 +1,404 @@
+.postPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+.postPageContainer > h1 {
+  color: #0c1421;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 36px */
+  letter-spacing: 0.36px;
+  padding: 30px 0px;
+}
+.jobPostContainer {
+  display: flex;
+  background-color: #161717;
+  border: 1px solid #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  box-shadow: 0px 5px 16px 0px rgba(8, 15, 52, 0.06);
+  border-radius: 12px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid #d9dbe9; */
+  padding: 18px;
+  gap: 18px;
+  border-bottom: 1px solid #d9dbe9;
+}
+.step {
+  background-color: #eff0f6;
+  color: #6f6c90;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.activeStep {
+  background-color: #fad85d;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.progressBarHalf {
+  width: 50%;
+  height: 6px;
+  background-color: #fad85d;
+  position: relative;
+  border-radius: 40px;
+}
+.progressBarComplete {
+  width: 100%;
+  height: 6px;
+  background-color: #fad85d;
+  position: relative;
+  border-radius: 40px;
+}
+.formContainer {
+  width: 100%;
+}
+.jobPostFormContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.formRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.formColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 14px;
+  margin-right: 10px; /* Adjust spacing between columns */
+}
+.formColumn > label {
+  color: var(--primary-text, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.16px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+.formColumn > input,
+select {
+  border-radius: 12px;
+  border: 2px solid var(--neutral-300, #eff0f6);
+  background: var(--neutral-100, #fff);
+  color: #8897ad;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.16px;
+  padding: 12px;
+  width: 100%;
+}
+.btnContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.btnOutline {
+  background-color: transparent !important;
+  border: 2px solid #fad85d !important;
+  color: #fad85d !important;
+  font-weight: 500 !important;
+}
+.textArea {
+  color: #6f6c90;
+  height: 120px;
+  border-radius: 12px;
+  border: 1px solid #6f6c902f;
+  padding: 14px;
+  /* Other/18-20 R */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+}
+.btnContainer > button {
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 12px;
+  background: #fad85d;
+  display: flex;
+  padding: 14px 0px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  letter-spacing: 0.2px;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addButton {
+  margin-bottom: 10px;
+}
+
+.dynamicFormItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: Poppins;
+}
+
+.editInput {
+  border-radius: 8px;
+  border: 2px solid var(--neutral-300, #eff0f6);
+  background: var(--neutral-100, #fff);
+  color: #8897ad;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.16px;
+  padding: 10px 8px;
+  width: 100%;
+}
+
+.deleteButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #43464a;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.deleteButton:hover {
+  color: #ff4545;
+}
+.jobResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.jobResults > h2 {
+  color: var(--neutral-800, #170f49);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  margin-bottom: 5px;
+}
+.jobResults > p {
+  color: var(--neutral-600, #6f6c90);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  width: 50%;
+  /* Paragraph/Default */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.jobResults > img {
+  width: 16%;
+  margin-bottom: 15px;
+}
+.viewButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad85d;
+  border-radius: 50px;
+  padding: 14px 40px;
+  color: #fff;
+  margin-top: 20px;
+}
+.StringListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0px 20px;
+}
+.StringListContainerList {
+  max-height: 25vh;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+.StringListContainer > div > ul > li {
+  width: fit-content;
+  padding: 6px 12px;
+  list-style: none;
+  font-family: Poppins;
+  border-radius: 4px;
+  background-color: #eff0f6;
+  color: #170f49;
+  font-size: 14px;
+  margin: 5px 0px;
+}
+.StringListContainer > textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+  border: 1px solid #6f6c902f;
+  padding: 14px;
+  /* Other/18-20 R */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+}
+
+/* ScreeningQuestionTemplate.module.css */
+
+.questionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin: 0 14px;
+  background-color: rgba(202, 203, 207, 0.112);
+  padding: 15px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #6f6c9011;
+}
+.question label,
+.answer label {
+  color: var(--primary-text, #0c1421);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.16px;
+  margin-bottom: 6px;
+}
+.question input,
+.answer input {
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #ecedf5;
+  margin-top: 3px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  width: 73%;
+  padding: 0px 10px;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  width: 27%;
+}
+
+.delete {
+  width: 5%;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: #f44336;
+}
+.addButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fad85d;
+  border-radius: 50px;
+  padding: 14px 30px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.16px;
+}
+
+.addButton:hover {
+  background-color: #fad85d;
+}
+
+.chapterCardContainer {
+  background-color: red;
+}
