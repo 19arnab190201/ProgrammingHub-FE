@@ -1,18 +1,21 @@
 // Dashboard.jsx
 
 import React from "react";
+import dashboard from "../assets/HomePage.svg";
 
 const Dashboard = () => {
   console.log("Dashboard");
   return (
-    <h1
+    <img
       style={{
-        color: "white",
-        fontSize: "2rem",
-        padding: "1rem",
-      }}>
-      Hello, Dashboard content here
-    </h1>
+        width: "100%",
+        height: "120%",
+        objectFit: "cover",
+        marginLeft: "-90px",
+      }}
+      src={dashboard}
+      alt=''
+    />
   );
 };
 

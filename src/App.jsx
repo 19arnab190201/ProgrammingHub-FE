@@ -27,6 +27,7 @@ function App({ navigation }) {
         <Route path='/login' element={<Login />} />
         <Route path='/course' element={<Course />} />
         <Route path='/course/create' element={<CreateCourse />} />
+        <Route path='/course/create/:id' element={<CreateCourse />} />
       </Route>
     </Routes>
   );

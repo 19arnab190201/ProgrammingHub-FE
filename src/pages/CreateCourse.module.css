@@ -128,9 +128,9 @@
 .formColumn > input,
 select {
   border-radius: 12px;
-  border: 2px solid var(--neutral-300, #eff0f6);
-  background: var(--neutral-100, #fff);
-  color: #8897ad;
+  border: none;
+  background: #282a2c;
+  color: #ffffff;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Poppins;
   font-size: 13px;
@@ -149,8 +149,12 @@ select {
   gap: 30px;
 }
 .btnContainer button {
-  color: #000 !important;
+  color: #000;
   font-weight: 500 !important;
+}
+.btnContainer button:hover {
+  background-color: #e1c86f;
+  color: #000;
 }
 .btnOutline {
   background-color: transparent !important;
@@ -159,7 +163,7 @@ select {
   font-weight: 500 !important;
 }
 .textArea {
-  color: rgba(19, 19, 20, 0.4);
+  color: rgb(255, 255, 255);
   background-color: #282a2c;
   height: 120px;
   border-radius: 12px;
@@ -169,7 +173,6 @@ select {
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
   line-height: 20px; /* 111.111% */
 }
 .btnContainer > button {
